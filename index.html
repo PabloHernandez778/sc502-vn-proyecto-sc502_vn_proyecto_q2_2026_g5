@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huellas a Casa | Panel de Gestión</title>
+    <title>Huellas a Casa</title>
 
     <link rel="stylesheet" href="css/estilos.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
@@ -19,74 +20,174 @@
 
     <aside class="sidebar">
 
-        <h2>Huellas</h2>
+        <h2><i class="fa-solid fa-paw"></i> Huellas</h2>
 
         <ul>
-
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Mis Animales</a></li>
-            <li><a href="#">Solicitudes</a></li>
-            <li><a href="#">Perfil Organización</a></li>
-
+            <li><a class="activo" href="#"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a href="#"><i class="fa-solid fa-heart"></i> Adopción</a></li>
+            <li><a href="#"><i class="fa-solid fa-location-dot"></i> Reportes</a></li>
+            <li><a href="paginas/dashboard.html"><i class="fa-solid fa-chart-column"></i> Dashboard</a></li>
+            <li><a href="#"><i class="fa-solid fa-book"></i> Educación</a></li>
         </ul>
 
     </aside>
 
-
     <main class="contenido">
 
-    <header>
-        <h1>Panel de Gestión</h1>
-        <p>Administra tu organización de forma rápida y sencilla.</p>
-    </header>
+        <!-- Hero -->
 
-    <section class="hero">
+        <section class="hero">
 
-        <div class="hero-texto">
-            <h2>¡Bienvenido a Huellas a Casa!</h2>
+            <div class="hero-texto">
+
+                <h1>Huellas a Casa </h1>
+
+                <p>
+                    Plataforma diseñada para facilitar la adopción responsable,
+                    reportar animales en situación de abandono y apoyar a las
+                    organizaciones que trabajan por el bienestar animal.
+                </p>
+
+                <a href="paginas/dashboard.html" class="btn-principal">
+                    Ir al Panel de Gestión
+                </a>
+
+            </div>
+
+            <div class="hero-icono">
+
+                <i class="fa-solid fa-dog"></i>
+                <i class="fa-solid fa-cat"></i>
+
+            </div>
+
+        </section>
+
+        <!-- Estadísticas -->
+
+        <section class="estadisticas">
+
+            <div class="stat-card">
+                <i class="fa-solid fa-paw"></i>
+                <h2>250+</h2>
+                <p>Animales registrados</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-heart"></i>
+                <h2>120</h2>
+                <p>Adopciones exitosas</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <h2>35</h2>
+                <p>Reportes activos</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-building"></i>
+                <h2>8</h2>
+                <p>Organizaciones</p>
+            </div>
+
+        </section>
+
+        <!-- Módulos -->
+
+        <section>
+
+            <h2 class="titulo">Módulos del Sistema</h2>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    <h3>Adopción</h3>
+
+                    <p>
+                        Encuentra mascotas disponibles para adoptar y conoce su historia.
+                    </p>
+
+                    <button>Entrar</button>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <h3>Reportes</h3>
+
+                    <p>
+                        Reporta animales perdidos, encontrados o en riesgo.
+                    </p>
+
+                    <button>Entrar</button>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-chart-column"></i>
+
+                    <h3>Dashboard</h3>
+
+                    <p>
+                        Gestiona animales, solicitudes y estadísticas.
+                    </p>
+
+                    <button onclick="location.href='paginas/dashboard.html'">
+                        Entrar
+                    </button>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-book"></i>
+
+                    <h3>Educación</h3>
+
+                    <p>
+                        Aprende sobre tenencia responsable y cuidados.
+                    </p>
+
+                    <button>Entrar</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Objetivo -->
+
+        <section class="objetivo">
+
+            <h2>Nuestro Objetivo</h2>
 
             <p>
-                Este módulo permite gestionar toda la información de la organización.
-                Desde aquí podrás administrar los animales registrados, revisar las
-                solicitudes de adopción, consultar estadísticas y mantener actualizado
-                el perfil de la organización.
+
+                En <strong>Huellas a Casa</strong> buscamos conectar mascotas
+                con familias responsables mediante herramientas digitales que
+                faciliten la adopción, el rescate y la educación sobre el bienestar animal.
+
             </p>
 
-            <a href="#" class="btn-principal">Comenzar</a>
-        </div>
+        </section>
 
-    </section>
+        <!-- Footer -->
 
-    <section class="accesos">
+        <footer>
 
-        <div class="acceso-card">
-            <div class="icono"></div>
-            <h3>Dashboard</h3>
-            <p>Consulta estadísticas e indicadores de la organización.</p>
-        </div>
+            <p>© 2026 Huellas a Casa | Todos los derechos reservados.</p>
 
-        <div class="acceso-card">
-            <div class="icono"></div>
-            <h3>Mis Animales</h3>
-            <p>Administra la información de los animales registrados.</p>
-        </div>
+        </footer>
 
-        <div class="acceso-card">
-            <div class="icono"></div>
-            <h3>Solicitudes</h3>
-            <p>Revisa y responde las solicitudes de adopción.</p>
-        </div>
-
-        <div class="acceso-card">
-            <div class="icono"></div>
-            <h3>Perfil Organización</h3>
-            <p>Actualiza la información y datos de contacto.</p>
-        </div>
-
-    </section>
-
-</main>
+    </main>
 
 </body>
 
